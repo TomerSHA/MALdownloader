@@ -4,5 +4,6 @@ import {DOMHandler} from "./DOM";
 
     let episodesCount = DOMHandler.getEpisodeCount();
     console.log(episodesCount + ' episodes');
-
+    let animeName = DOMHandler.getAnimeName();
+    console.log('name: ' + animeName);
 })();

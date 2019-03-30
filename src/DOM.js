@@ -3,7 +3,8 @@ import $ from 'jquery';
 export const DOMHandler =  (function(){
 
     return {
-        getEpisodeCount
+        getEpisodeCount,
+        getAnimeName
     };
 
     function getEpisodeCount(){
@@ -12,6 +13,8 @@ export const DOMHandler =  (function(){
     }
 
     function getAnimeName(){
-
+        let s = window.location.pathname;
+        let name = s.replace(/\/anime\/[0-9]*\//, '');
+        return name.replace(/_/g, ' ');
     }
 })();
