@@ -1,0 +1,16 @@
+{
+  "name": "MALdownloader",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "not yet",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://myanimelist.net/anime/*"
+      ],
+      "js": [
+        "fun.js"
+      ]
+    }
+  ]
+}
